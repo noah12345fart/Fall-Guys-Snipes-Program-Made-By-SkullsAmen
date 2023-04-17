@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\onesl\\Desktop\\ep5\\ep5.csproj",
+      "projectUniqueName": "C:\\Users\\onesl\\Desktop\\fall guys snipes program\\ep5.csproj",
       "projectName": "ep5",
-      "projectPath": "C:\\Users\\onesl\\Desktop\\ep5\\ep5.csproj",
+      "projectPath": "C:\\Users\\onesl\\Desktop\\fall guys snipes program\\ep5.csproj",
       "packagesPath": "C:\\Users\\onesl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\onesl\\Desktop\\ep5\\obj\\",
+      "outputPath": "C:\\Users\\onesl\\Desktop\\fall guys snipes program\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\onesl\\AppData\\Roaming\\NuGet\\NuGet.Config",

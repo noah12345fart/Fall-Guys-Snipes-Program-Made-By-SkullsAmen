@@ -13,3 +13,18 @@ C:\Users\onesl\Desktop\ep5\obj\Debug\net7.0\refint\ep5.dll
 C:\Users\onesl\Desktop\ep5\obj\Debug\net7.0\ep5.pdb
 C:\Users\onesl\Desktop\ep5\obj\Debug\net7.0\ep5.genruntimeconfig.cache
 C:\Users\onesl\Desktop\ep5\obj\Debug\net7.0\ref\ep5.dll
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.csproj.AssemblyReference.cache
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.AssemblyInfoInputs.cache
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.AssemblyInfo.cs
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.csproj.CoreCompileInputs.cache
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.dll
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\refint\ep5.dll
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.pdb
+C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.exe
+C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.deps.json
+C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.runtimeconfig.json
+C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.dll
+C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.pdb
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.genruntimeconfig.cache
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ref\ep5.dll
