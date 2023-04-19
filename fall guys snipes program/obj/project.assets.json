@@ -1,11 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Octokit/5.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Octokit/5.0.4": {
+      "sha512": "Voup3PUC6YtiNQIvcOCqQXEA4qB1G2D7oWW1I+tjrBoEf2mHvz/6+IRnA7y6+Pd8sV+j9sr2rXhduIBO8k7guA==",
+      "type": "package",
+      "path": "octokit/5.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Octokit.dll",
+        "lib/netstandard2.0/Octokit.xml",
+        "octokit.5.0.4.nupkg.sha512",
+        "octokit.nuspec",
+        "octokit.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Octokit >= 5.0.4"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\onesl\\.nuget\\packages\\": {}
@@ -45,6 +76,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "Octokit": {
+            "target": "Package",
+            "version": "[5.0.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using Octokit;
 
 internal class Program
 {
@@ -15,7 +18,7 @@ internal class Program
     [DllImport("user32.dll")]
     public static extern bool CloseClipboard();
 
-    private static void Main(string[] args)
+    private static async Task Main(string[] args)
     {
         Console.WriteLine("0 Na_East  1 Na_West  2 Us_Central  3 Australia");
         Console.WriteLine("0 Solo Show  1 Duos Show  2 Squads Show  3 Lets Get Kraken  4 Slime Climb Time  5 X-Treme Squads Show");
@@ -37,6 +40,9 @@ internal class Program
         string result = string.Format("Server: ({0}) Gamemode: ({1}) {2}", servers[serverNumber], gamemodes[gamemodeNumber], promos[promoNumber]);
         Console.WriteLine(result);
 
+        // Check for updates
+        await CheckForUpdates();
+
         // Copy the result to the clipboard
         OpenClipboard(IntPtr.Zero);
         EmptyClipboard();
@@ -47,5 +53,31 @@ internal class Program
         Console.WriteLine("\nThe result has been copied to the clipboard.");
 
         Console.ReadKey();
+    }
+
+    private static async Task CheckForUpdates()
+    {
+        var owner = "noah12345fart";
+        var repo = "Fall-Guys-Snipes-Program-Made-By-SkullsAmen";
+        var currentVersion = "1.0.0"; // Replace with your actual version number
+
+        var client = new GitHubClient(new ProductHeaderValue("your-app-name"));
+        client.Credentials = new Credentials("your-personal-access-token");
+
+        var latestRelease = await client.Repository.Release.GetLatest(owner, repo);
+        var latestVersion = latestRelease.TagName;
+
+        if (latestVersion != currentVersion)
+        {
+            Console.WriteLine($"A new version of the application is available ({latestVersion}). Do you want to download and install it now? (Y/N)");
+
+            var keyInfo = Console.ReadKey();
+
+            if (keyInfo.KeyChar == 'Y' || keyInfo.KeyChar == 'y')
+            {
+                Process.Start(latestRelease.HtmlUrl);
+                Environment.Exit(0);
+            }
+        }
     }
 }

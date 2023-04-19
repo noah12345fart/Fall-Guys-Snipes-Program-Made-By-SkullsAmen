@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5iNDzR2jDE2cuDJQqGHefXNxtwWaR9eapdDlVq9qNq4i7rPn6hHj5M5mPxc+4gr7oglhaAqmLTr7qkxes/MW2g==",
+  "dgSpecHash": "o0619qr21LwfDVvWJsHGljht4BQT/0BOaTp9tUBkahvoc7FO6qzpve18BlAm4QyZpfrkuMaSmVyc4Yaslc+0Pw==",
   "success": true,
   "projectFilePath": "C:\\Users\\onesl\\Desktop\\fall guys snipes program\\ep5.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\onesl\\.nuget\\packages\\octokit\\5.0.4\\octokit.5.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

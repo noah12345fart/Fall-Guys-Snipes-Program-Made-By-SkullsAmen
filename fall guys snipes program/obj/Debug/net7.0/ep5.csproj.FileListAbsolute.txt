@@ -28,3 +28,5 @@ C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.dll
 C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\ep5.pdb
 C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.genruntimeconfig.cache
 C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ref\ep5.dll
+C:\Users\onesl\Desktop\fall guys snipes program\bin\Debug\net7.0\Octokit.dll
+C:\Users\onesl\Desktop\fall guys snipes program\obj\Debug\net7.0\ep5.csproj.CopyComplete
