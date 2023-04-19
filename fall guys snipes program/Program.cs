@@ -61,8 +61,8 @@ internal class Program
         var repo = "Fall-Guys-Snipes-Program-Made-By-SkullsAmen";
         var currentVersion = "1.0.0"; // Replace with your actual version number
 
-        var client = new GitHubClient(new ProductHeaderValue("your-app-name"));
-        client.Credentials = new Credentials("your-personal-access-token");
+        var client = new GitHubClient(new ProductHeaderValue("Fall-Guys-Snipes-Program-Made-By-SkullsAmen"));
+        client.Credentials = new Credentials("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");
 
         var latestRelease = await client.Repository.Release.GetLatest(owner, repo);
         var latestVersion = latestRelease.TagName;
