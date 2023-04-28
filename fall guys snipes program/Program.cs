@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using Octokit;
 
 internal class Program
 {
@@ -40,9 +38,6 @@ internal class Program
         string result = string.Format("Server: ({0}) Gamemode: ({1}) {2}", servers[serverNumber], gamemodes[gamemodeNumber], promos[promoNumber]);
         Console.WriteLine(result);
 
-        // Check for updates
-        await CheckForUpdates();
-
         // Copy the result to the clipboard
         OpenClipboard(IntPtr.Zero);
         EmptyClipboard();
@@ -50,35 +45,8 @@ internal class Program
         SetClipboardData(13, hGlobal);
         CloseClipboard();
 
-        Console.WriteLine("\nThe result has been copied to the clipboard!!!.");
+        Console.WriteLine("\nThe result has been copied to the clipboard!!.");
 
         Console.ReadKey();
-    }
-
-    private static async Task CheckForUpdates()
-    {
-        var owner = "noah12345fart";
-var repo = "Fall-Guys-Snipes-Program-Made-By-SkullsAmen";
-var currentVersion = "1.0.2"; // Replace with your actual version number
-
-var client = new GitHubClient(new ProductHeaderValue("Fall-Guys-Snipes-Program-Made-By-SkullsAmen"));
-client.Credentials = new Credentials("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");
-
-var latestRelease = await client.Repository.Release.GetLatest(owner, repo);
-var latestVersion = latestRelease.TagName;
-
-
-        if (latestVersion != currentVersion)
-        {
-            Console.WriteLine($"A new version of the application is available ({latestVersion}). Do you want to download and install it now? (Y/N)");
-
-            var keyInfo = Console.ReadKey();
-
-            if (keyInfo.KeyChar == 'Y' || keyInfo.KeyChar == 'y')
-            {
-                Process.Start(latestRelease.HtmlUrl);
-                Environment.Exit(0);
-            }
-        }
     }
 }
