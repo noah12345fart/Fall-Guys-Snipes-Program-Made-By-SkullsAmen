@@ -50,7 +50,7 @@ internal class Program
         SetClipboardData(13, hGlobal);
         CloseClipboard();
 
-        Console.WriteLine("\nThe result has been copied to the clipboard!.");
+        Console.WriteLine("\nThe result has been copied to the clipboard!!!.");
 
         Console.ReadKey();
     }
@@ -58,14 +58,15 @@ internal class Program
     private static async Task CheckForUpdates()
     {
         var owner = "noah12345fart";
-        var repo = "Fall-Guys-Snipes-Program-Made-By-SkullsAmen";
-        var currentVersion = "1.0.1"; // Replace with your actual version number
+var repo = "Fall-Guys-Snipes-Program-Made-By-SkullsAmen";
+var currentVersion = "1.0.1"; // Replace with your actual version number
 
-        var client = new GitHubClient(new ProductHeaderValue("Fall-Guys-Snipes-Program-Made-By-SkullsAmen"));
-        client.Credentials = new Credentials("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");
+var client = new GitHubClient(new ProductHeaderValue("Fall-Guys-Snipes-Program-Made-By-SkullsAmen"));
+client.Credentials = new Credentials("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");
 
-        var latestRelease = await client.Repository.Release.GetLatest(owner, repo);
-        var latestVersion = latestRelease.TagName;
+var latestRelease = await client.Repository.Release.GetLatest(owner, repo);
+var latestVersion = latestRelease.TagName;
+
 
         if (latestVersion != currentVersion)
         {
