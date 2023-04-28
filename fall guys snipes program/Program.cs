@@ -59,7 +59,7 @@ internal class Program
     {
         var owner = "noah12345fart";
 var repo = "Fall-Guys-Snipes-Program-Made-By-SkullsAmen";
-var currentVersion = "1.0.1"; // Replace with your actual version number
+var currentVersion = "1.0.2"; // Replace with your actual version number
 
 var client = new GitHubClient(new ProductHeaderValue("Fall-Guys-Snipes-Program-Made-By-SkullsAmen"));
 client.Credentials = new Credentials("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");
